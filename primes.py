@@ -16,3 +16,15 @@ If no prime numbers are found in that range, it should print a statement to the 
 Now we end the comment with triple quotes."""
 
 # The rest is up to you!
+x1=int(x1)
+x2=int(x2)
+num=2
+for x in range (x1,x2):
+    if x<3: continue
+    for i in range (2,x-1):
+        if (num%i)==0:
+            print(x, "is not a prime number")
+            print(i, "times", num/i,"is",num)
+            break
+        else:
+            print (x, "is a prime number")
